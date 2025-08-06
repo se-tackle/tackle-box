@@ -5,7 +5,7 @@ plugins {
     id("io.spring.dependency-management") version "1.1.7"
 }
 
-group = "org.swenbe"
+group = "org.setackle"
 version = "0.0.1-SNAPSHOT"
 
 java {

@@ -1,4 +1,4 @@
-package org.swenbe.tacklebox
+package org.setackle.tacklebox
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
