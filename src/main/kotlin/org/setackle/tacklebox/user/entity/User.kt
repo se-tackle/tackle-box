@@ -1,4 +1,4 @@
-package org.setackle.tacklebox.user.model
+package org.setackle.tacklebox.user.entity
 
 import jakarta.persistence.*
 import java.time.LocalDateTime
