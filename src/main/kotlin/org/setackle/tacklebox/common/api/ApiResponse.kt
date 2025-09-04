@@ -1,4 +1,4 @@
-package org.setackle.tacklebox.common.response
+package org.setackle.tacklebox.common.api
 
 import com.fasterxml.jackson.annotation.JsonInclude
 
@@ -16,13 +16,19 @@ data class ApiResponse<T>(
                 data = data
             )
 
+        fun success(): ApiResponse<Unit> =
+            ApiResponse(
+                code = ResponseCode.SUCCESS.code,
+                message = ResponseCode.SUCCESS.message,
+            )
+
         fun error(errorCode: ResponseCode): ApiResponse<Nothing> =
             ApiResponse(
                 code = errorCode.code,
                 message = errorCode.message
             )
 
-        fun error(message: String, errorCode: ResponseCode): ApiResponse<Nothing> =
+        fun error(errorCode: ResponseCode, message: String): ApiResponse<Nothing> =
             ApiResponse(
                 code = errorCode.code,
                 message = message,

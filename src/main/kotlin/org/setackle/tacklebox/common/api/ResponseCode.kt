@@ -1,4 +1,4 @@
-package org.setackle.tacklebox.common.response
+package org.setackle.tacklebox.common.api
 
 enum class ResponseCode(
     val code: Int,
